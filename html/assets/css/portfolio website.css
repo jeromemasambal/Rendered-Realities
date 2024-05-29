@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+   
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: gray;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    background: transparent;
+    z-index: 100;
+}
+.logo {
+    position:absolute;
+    display: flex;
+    top: 30px;
+    left: 190px;
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+.navbar{
+    top: 40px;
+    left: 1150px;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar a {
+    display: flex;
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: yellow;
+}
+
+
+.home-content {
+    max-width: 600px;
+}
+.home-content h1 {
+    color: #ededed;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: yellow;
+}
+.home-content p{
+    color: #ededed;
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+.home-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+ 
+}
+
+
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid yellow;
+    border-radius: 50%;
+    font-size: 20px;
+    color: yellow;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.home-sci a :hover {
+    color: black;
+}
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: yellow;
+    z-index: -1;
+    transition: .5s;
+ 
+}
+
+.home-sci a:hover::before {
+    width: 100%;
+
+} 
+
+.contact-me{
+    position: absolute;
+    left: 202px;
+    font-size: 18px;
+    bottom: 90px;
+    display: flex;
+    justify-content: space-between;
+    color: yellow;
+}
